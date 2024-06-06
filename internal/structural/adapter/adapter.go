@@ -19,9 +19,9 @@ func (t *TypeCCharger) ChargeFromTypeC() {
 }
 
 type TypeCAdapter struct {
-	*TypeCCharger
+	TypeCCharger *TypeCCharger
 }
 
 func (a *TypeCAdapter) ChargeFromLightning() {
-	a.ChargeFromTypeC()
+	a.TypeCCharger.ChargeFromTypeC()
 }
